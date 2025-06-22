@@ -3,7 +3,10 @@
     align-items: center;
     column-gap: 4rem;
 }
-
+.resume__view-link {
+    color: #FFFFFF;margin-left: 20px;background-color: #ffaa00;
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.7);padding: 15px 12px;border-radius: 20px;
+}
 .about__img {
     width: 350px;
     border-radius: 1.5rem;

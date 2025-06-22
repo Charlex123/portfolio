@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get In Touch 📩</h2>
-        <span className="section__subtitle">Ready to get started on your project? <br/> Contact me now for a Free consultation.</span>
+        <span className="section__subtitle">Ready to get started on your project? <br/> Contact me now let's bring your idea and project to live.</span>
 
         <div className="contact__container container grid">
             <div className="contact__content">
@@ -30,23 +30,23 @@ const Contact = () => {
                         <i className="bx bx-mail-send contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">soumyajitbasak.work@gmail.com</span>
+                        <span className="contact__card-data">charlesmuoka1@gmail.com</span>
 
-                        <a href="mailto:soumyajitbasak.work@gmail.com" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="mailto:charlesmuoka1@gmail.com" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
 
                     <div className="contact__card">
                         <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                         <h3 className="contact__card-title">WhatsApp</h3>
-                        <span className="contact__card-data">(+91) 9591688760</span>
+                        <span className="contact__card-data">(+234) 8066387342</span>
 
-                        <a href="https://api.whatsapp.com/send?phone=9591688760&text=Hello, I would like to connect with you!" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=08066387342&text=Hello, I would like to connect with you!" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div className="contact__content">
+            {/* <div className="contact__content">
                 <h3 className="contact__title">Write Me Your Message<i className="uil uil-message"></i></h3>
 
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
@@ -86,7 +86,7 @@ const Contact = () => {
                 </svg>
         </button>
                 </form>
-            </div>
+            </div> */}
         </div>
     </section>
   )

@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useRef, useEffect } from 'react';
 
-const WorksItems = ({ item }) => {
+const ProjectsItems = ({ item }) => {
 	const [showTooltip, setShowTooltip] = useState(false);
 	const [showPreview, setShowPreview] = useState(false);
 	const previewRef = useRef(null);
@@ -74,7 +74,9 @@ const WorksItems = ({ item }) => {
 		>
 			<img src={item.image} alt='' className='work__img' />
 			<h3 className='work__title'>{item.title}</h3>
-			
+			<div className='work_note'>
+				<p>{item.note}</p>
+			</div>
 			{!isMobile && showPreview && item.status === 'completed' && item.demoUrl && item.demoUrl !== '#' && (
 				<div className="work__preview" ref={previewRef}>
 					<iframe 
@@ -121,4 +123,4 @@ const WorksItems = ({ item }) => {
 	);
 };
 
-export default WorksItems;
+export default ProjectsItems;

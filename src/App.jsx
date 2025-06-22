@@ -6,7 +6,7 @@ import About from '../components/about/About';
 import Skills from '../components/skills/Skills';
 import Experience from '../components/experience/Experience';
 import Qualification from '../components/qualification/Qualification';
-import Work from '../components/work/Work';
+import Projects from '../components/projects/project';
 import Testimonials from '../components/testimonials/Testimonials';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <main className='main'>
         <Home />
-        <Work />
+        <Projects />
         <Skills />
         <Experience />
         <Qualification />

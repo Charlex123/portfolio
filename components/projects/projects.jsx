@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
-import { projectsData, projectsNav } from './Data';
-import WorksItems from './WorksItems';
+import { projectsData } from './Data';
+import ProjectsItems from './projectsItems';
 
-const Works = () => {
+const Projects = () => {
     const[item, setItem] = useState({ name: 'all' });
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(false);
@@ -25,7 +25,7 @@ const Works = () => {
     };
   return (
     <div>
-        <div className="work__filters">
+        {/* <div className="work__filters">
             {projectsNav.map((item, index) => {
                 return (
                     <span onClick={(e) => {
@@ -33,15 +33,18 @@ const Works = () => {
                     }} className={`${active === index ? 'active-work' : ''} work__item`} key={index}>{item.name}</span>
                 );
             })}
-        </div>
+        </div> */}
 
         <div className="work__container container grid">
             {projects.map((item) => {
-                return <WorksItems item={item} key={item.id}/>
+                return <ProjectsItems item={item} key={item.id}/>
             })}
+        </div>
+        <div className="work__more">
+            And many more ...
         </div>
     </div>
   )
 }
 
-export default Works
+export default Projects

@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import logo from '../../src/assets/logo.png'
 import "./footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">&lt;Soumyajit Basak/&gt;</h1>
+            <h1 className="footer__title"><img src={logo} alt='logo' style={{width: '100px'}}/></h1>
 
             <ul className="footer__list">
                 <li>
@@ -23,20 +24,24 @@ const Footer = () => {
             </ul>
 
             <div className="footer__social">
-                <a href="https://www.instagram.com/soumyajiitttt/" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-instagram"></i>
+                <a href="https://www.x.com/muokacharles2/" className="home__social-icon" target="_blank">
+                    <i className="uil uil-twitter"></i>
                 </a>
 
-                <a href="https://x.com/Soumyajiitt" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-twitter"></i>
+                <a href="https://www.youtube.com/charlesmuoka/" className="home__social-icon" target="_blank">
+                    <i className="uil uil-youtube"></i>
                 </a>
 
-                <a href="https://github.com/soumyajiitt" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-github"></i>
+                <a href="https://in.linkedin.com/in/muokacharles" className="home__social-icon" target="_blank">
+                    <i className="uil uil-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/charlex123" className="home__social-icon" target="_blank">
+                    <i className="uil uil-github-alt"></i>
                 </a>
             </div>
 
-            <span className="footer__copy">&#169; Soumyajit Basak. All rigths reserved</span>
+            <span className="footer__copy">&#169; Charles Muoka. All rigths reserved</span>
         </div>
     </footer>
   )
