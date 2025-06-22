@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import logo from '../../src/assets/logo.png';
 
 const Header = () => {
 	window.addEventListener('scroll', function () {
@@ -17,7 +18,7 @@ const Header = () => {
 		<header className='header'>
 			<nav className='nav container'>
 				<a href='index.html ' className='nav__logo'>
-					
+					<img src={logo} alt='logo' />
 				</a>
 
 				<div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
