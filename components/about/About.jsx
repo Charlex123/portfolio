@@ -27,7 +27,7 @@ const About = () => {
               When I'm not coding, you might find me exploring new tech trends, contributing to open-source projects, or refining personal projects that blend creativity and code.
             </p>
 
-            <a download="" href={CV} className="button button--flex">Download CV 
+            <a download="" href={CV} className="button button--flex">Download Resume 
               <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
