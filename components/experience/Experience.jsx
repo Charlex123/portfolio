@@ -23,7 +23,7 @@ const EXPERIENCE = [
 	{
 		id: 2,
 		icon: 'uil uil-shield-check',
-		role: 'Chief Technology Officer',
+		role: 'Machine Learning & Software Engineer',
 		company: 'NostraHealth',
 		period: '2024 — Present',
 		summary:

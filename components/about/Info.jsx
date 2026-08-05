@@ -21,8 +21,8 @@ const Info = () => {
 			<div className='about__box'>
 				<i className='bx bx-shield-quarter about__icon'></i>
 
-				<h3 className='about__title'>Leading</h3>
-				<span className='about__subtitle'>CTO, NostraHealth</span>
+				<h3 className='about__title'>Focus</h3>
+				<span className='about__subtitle'>ML systems &amp; platforms</span>
 			</div>
 		</div>
 	);

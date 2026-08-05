@@ -24,10 +24,9 @@ const About = () => {
             <Info />
 
             <p className='about__description'>
-              I am a software and AI platform engineer, and Chief Technology Officer at
-              NostraHealth. I started building for clients in 2017 and have never stopped
-              writing code — today I lead a team while still architecting and shipping the
-              systems myself.
+              I am a machine learning and software engineer. I started building for clients
+              in 2017 and have never stopped writing code — today I lead engineering at
+              NostraHealth while still architecting and shipping the systems myself.
             </p>
             <p className='about__description'>
               My work sits where the problems are genuinely hard: a FHIR R4 clinical backend

@@ -2,9 +2,9 @@
 
 # Charles Muoka
 
-### Chief Technology Officer · AI Platform & Full-Stack Engineer
+### Machine Learning & Software Engineer
 
-**I architect and ship production systems where the hard part is real** — FHIR-compliant
+**I build and ship production systems where the hard part is real** — FHIR-compliant
 clinical platforms, multi-agent AI infrastructure, industrial knowledge graphs and on-chain
 applications.
 
@@ -19,9 +19,9 @@ applications.
 
 ## About
 
-I am a software and AI platform engineer, and **Chief Technology Officer at NostraHealth**.
-I started building for clients in 2017 and have never stopped writing code — today I lead a
-team while still architecting and shipping the systems myself.
+I am a **machine learning and software engineer**. I started building for clients in 2017
+and have never stopped writing code — today I lead engineering at NostraHealth while still
+architecting and shipping the systems myself.
 
 My work sits where the problems are genuinely hard: a FHIR R4 clinical backend routing across
 four AI providers, a multilingual tutor that runs offline on a student's device, an industrial
@@ -36,7 +36,7 @@ to walk through their architecture.
 
 | | |
 |---|---|
-| **Role** | CTO, NostraHealth · Founder & Principal Engineer, Zetranet Solutions Ltd |
+| **Role** | Machine Learning & Software Engineer — NostraHealth · Zetranet Solutions Ltd |
 | **Building since** | 2017 |
 | **Products shipped** | 22 flagship platforms |
 | **Commits on active platforms** | 4,500+ |
@@ -129,7 +129,7 @@ Architecture, implementation and delivery of the AI product portfolio across edu
 industrial operations and government: Satryx Forge, MirrorMingo, NEIP, the Nostra Tova agent
 monorepo and the ClawPod GPU inference tier.
 
-**Chief Technology Officer** — NostraHealth · *2024 — Present*
+**Machine Learning & Software Engineer** — NostraHealth · *2024 — Present*
 Lead the engineering organisation and remain hands-on. Architected the FHIR R4 clinical
 backend with multi-provider AI routing; delivered the Hospital Management System and the B2B
 organisation console; supervised and contributed to the Flutter mobile app; published official

@@ -153,7 +153,7 @@ export const projectsData = [
 		category: 'Health Tech',
 		access: ACCESS.PROPRIETARY,
 		year: '2024 — present',
-		role: 'Chief Technology Officer',
+		role: 'Machine Learning & Software Engineer',
 		summary:
 			'The flagship NostraHealth product — an AI-assisted medical platform serving patients, clinicians and partner organisations. I lead the engineering team behind it.',
 		highlights: [

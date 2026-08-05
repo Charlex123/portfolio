@@ -110,7 +110,7 @@ const Data = () => {
       </h1>
 
       <h3 className="home__subtitle">
-        CTO at NostraHealth · AI Platform &amp; Full-Stack Engineer
+        Machine Learning &amp; Software Engineer
       </h3>
       <p className="home__description">
         I architect and ship production systems where the hard part is real — FHIR-compliant
