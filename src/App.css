@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /* Light mode colors */
 :root {
@@ -10,6 +9,9 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+
+  --accent-color: #e69704;
+  --accent-color-soft: rgba(230, 151, 4, 0.12);
 
   --body-font: "Poppins", sans-serif;
 
@@ -65,8 +67,10 @@
   --toggle-slider-bg-light: #ffffff; 
   --toggle-slider-bg-dark: #e0e0e0; 
   --toggle-icon-color: #090909; 
-  --toggle-bg-hover: #444444; 
+  --toggle-bg-hover: #444444;
   --toggle-slider-bg-hover: #f0f0f0;
+  --accent-color: #ffb02e;
+  --accent-color-soft: rgba(255, 176, 46, 0.16);
 }
 
 body {
@@ -177,6 +181,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;
+  /* Keep section titles clear of the floating header on anchor jumps. */
+  scroll-margin-top: 5rem;
 }
 
 .section__title {
@@ -278,9 +284,40 @@ img {
   }
 }
 
-/* Custom cursor styles */
-body, html {
-  cursor: none; /* Hide the default cursor */
+/* Custom cursor styles — only on devices that actually have a pointer, so touch
+   and keyboard users are never left without a visible cursor. */
+@media (hover: hover) and (pointer: fine) {
+  body, html {
+    cursor: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
+
+/*=============== ACCESSIBILITY ===============*/
+:focus-visible {
+  outline: 2px solid var(--accent-color, #e69704);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .cursor-dot {

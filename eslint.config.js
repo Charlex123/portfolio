@@ -5,9 +5,11 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  // Global ignores — must be its own object with no `files` key to apply
+  // repo-wide, otherwise build output gets linted.
+  { ignores: ['dist/**', 'node_modules/**', 'public/**'] },
   {
     files: ['**/*.{js,jsx}'],
-    ignores: ['dist'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,

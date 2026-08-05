@@ -1,7 +1,9 @@
 {
-  "name": "portfolio-website",
+  "name": "charles-muoka-portfolio",
+  "description": "Portfolio of Charles Muoka — CTO & AI Platform Engineer",
+  "author": "Charles Muoka <charlesmuoka1@gmail.com>",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

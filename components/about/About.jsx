@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import "./about.css";
-import AboutImg from "../../src/assets/about-pic.png";
+import AboutImg from "../../src/assets/about-pic.webp";
 import CV from "../../src/assets/Resume.pdf"
 import Info from './Info';
 
@@ -12,19 +12,36 @@ const About = () => {
         <span className="section__subtitle">About me</span>
 
         <div className="about__container container grid">
-          <img src={AboutImg} alt="" className="about__img" />
+          <img
+            src={AboutImg}
+            alt="Charles Muoka, Software and AI Platform Engineer"
+            className="about__img"
+            loading="lazy"
+            decoding="async"
+          />
 
           <div className="about__data">
             <Info />
 
             <p className='about__description'>
-              I'm a passionate and detail-oriented software developer with a strong foundation in building scalable, user-focused web applications. With experience across the full stack — from crafting responsive front-end interfaces with technologies like React and Tailwind CSS, to designing robust back-end APIs using Node.js and Python — I thrive on turning complex problems into elegant, maintainable solutions.
+              I am a software and AI platform engineer, and Chief Technology Officer at
+              NostraHealth. I started building for clients in 2017 and have never stopped
+              writing code — today I lead a team while still architecting and shipping the
+              systems myself.
             </p>
             <p className='about__description'>
-              I enjoy collaborating with teams, embracing clean code practices, and continuously learning to stay up to date with evolving technologies. Whether I'm optimizing performance, integrating third-party services, or architecting entire systems, I bring a problem-solving mindset and a love for innovation to every project I work on.
+              My work sits where the problems are genuinely hard: a FHIR R4 clinical backend
+              routing across four AI providers, a multilingual tutor that runs offline on a
+              student&apos;s device, an industrial knowledge graph that gives one compressor a
+              single identity across SAP, Maximo and PI System, and Solana programs deployed to
+              mainnet. Full stack in the real sense — data model, inference, infrastructure and
+              the interface on top.
             </p>
             <p className='about__description'>
-              When I'm not coding, you might find me exploring new tech trends, contributing to open-source projects, or refining personal projects that blend creativity and code.
+              I also publish what is safe to publish. Tova and TovaClaw are open-source agent
+              frameworks, nosi is an open real-time avatar toolkit, and the NostraHealthAI SDKs
+              ship in Python, TypeScript, Java and PHP. The commercial products stay closed, but
+              I am always glad to walk through their architecture.
             </p>
 
             <a download="" href={CV} className="button button--flex">Download Resume 
@@ -54,8 +71,8 @@ const About = () => {
                 ></path>
               </svg>
             </a>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume__view-link button button--flex">
-              <i class='bx bx-show'></i> View Resume <svg
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume__view-link button button--flex">
+              <i className='bx bx-show'></i> View Resume <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

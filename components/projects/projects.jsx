@@ -1,50 +1,74 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
-import { projectsData } from './Data';
+import React, { useMemo, useState } from 'react';
+import { projectsData, projectsNav, ACCESS } from './Data';
 import ProjectsItems from './projectsItems';
 
 const Projects = () => {
-    const[item, setItem] = useState({ name: 'all' });
-    const [projects, setProjects] = useState([]);
-    const [active, setActive] = useState(false);
+	const [active, setActive] = useState('all');
 
-    useEffect(() => {
-        if(item.name === "all") {
-            setProjects(projectsData);
-        } else {
-          const newProjects = projectsData.filter((project) => {
-            return project.category === item.name;
-          });
-          setProjects(newProjects);
-        }
-    }, [item]);
+	const counts = useMemo(() => {
+		const map = { all: projectsData.length };
+		projectsData.forEach((p) => {
+			map[p.category] = (map[p.category] || 0) + 1;
+		});
+		return map;
+	}, []);
 
-    const handleClick = (e, index) => {
-        setItem({ name: e.target.textContent });
-        setActive(index);
-    };
-  return (
-    <div>
-        {/* <div className="work__filters">
-            {projectsNav.map((item, index) => {
-                return (
-                    <span onClick={(e) => {
-                        handleClick(e, index);
-                    }} className={`${active === index ? 'active-work' : ''} work__item`} key={index}>{item.name}</span>
-                );
-            })}
-        </div> */}
+	const projects = useMemo(
+		() =>
+			active === 'all'
+				? projectsData
+				: projectsData.filter((project) => project.category === active),
+		[active]
+	);
 
-        <div className="work__container container grid">
-            {projects.map((item) => {
-                return <ProjectsItems item={item} key={item.id}/>
-            })}
-        </div>
-        <div className="work__more">
-            And many more ...
-        </div>
-    </div>
-  )
-}
+	const proprietaryCount = projectsData.filter(
+		(p) => p.access === ACCESS.PROPRIETARY
+	).length;
 
-export default Projects
+	return (
+		<div>
+			<p className='work__intro'>
+				{projectsData.length} shipped products across AI platforms, clinical systems,
+				blockchain and the open-source tooling underneath them.{' '}
+				<strong>{proprietaryCount}</strong> are proprietary commercial products whose
+				source stays closed — the architecture is described on each card.
+			</p>
+
+			<div className='work__filters'>
+				{projectsNav.map((nav) => (
+					<button
+						type='button'
+						key={nav.name}
+						onClick={() => setActive(nav.name)}
+						className={`work__item ${active === nav.name ? 'active-work' : ''}`}
+						aria-pressed={active === nav.name}
+					>
+						{nav.label}
+						<span className='work__item-count'>{counts[nav.name] || 0}</span>
+					</button>
+				))}
+			</div>
+
+			<div className='work__container container grid'>
+				{projects.map((item) => (
+					<ProjectsItems item={item} key={item.id} />
+				))}
+			</div>
+
+			<div className='work__more'>
+				Plus client platforms, trading bots and internal tooling not listed here —{' '}
+				<a
+					href='https://github.com/Charlex123?tab=repositories'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					browse the public repositories
+				</a>
+				.
+			</div>
+		</div>
+	);
+};
+
+export default Projects;

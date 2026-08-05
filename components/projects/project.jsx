@@ -6,8 +6,8 @@ import Projects from './projects';
 const Project = () => {
   return (
     <section className="work section" id='projects'>
-        <h2 className="section__title">Projects 🧑🏻‍💻</h2>
-        <span className="section__subtitle">Most Recent Projects</span>
+        <h2 className="section__title">Selected Work 🧑🏻‍💻</h2>
+        <span className="section__subtitle">Products I have architected, built and shipped</span>
 
         <Projects />
     </section>

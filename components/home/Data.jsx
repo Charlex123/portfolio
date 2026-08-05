@@ -1,7 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 
 const Data = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -109,9 +109,35 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className="home__subtitle">Software/Blockchain Developer</h3>
-      <p className="home__description">I'm a creative developer, very passionate and a dedicated team player. Let's build better softwares one program at a time. I'm open to take new challenges, learn new technologies and adapt to new environments.</p>
+      <h3 className="home__subtitle">
+        CTO at NostraHealth · AI Platform &amp; Full-Stack Engineer
+      </h3>
+      <p className="home__description">
+        I architect and ship production systems where the hard part is real — FHIR-compliant
+        clinical platforms, multi-agent AI infrastructure, industrial knowledge graphs and
+        on-chain applications. Nine years of building, and I still write the code.
+      </p>
 
+      <ul className="home__stats">
+        <li className="home__stat">
+          <strong>4,500+</strong>
+          <span>commits on shipping platforms</span>
+        </li>
+        <li className="home__stat">
+          <strong>22</strong>
+          <span>products architected &amp; shipped</span>
+        </li>
+        <li className="home__stat">
+          <strong>6</strong>
+          <span>languages in production</span>
+        </li>
+        <li className="home__stat">
+          <strong>4</strong>
+          <span>official SDKs published</span>
+        </li>
+      </ul>
+
+      <div className="home__cta">
       <a href="mailto:charlesmuoka1@gmail.com" className="button button--flex">
         Contact Me Now
         <svg
@@ -129,6 +155,12 @@ const Data = () => {
         </svg>
 
       </a>
+
+      <a href="#projects" className="button button--ghost button--flex">
+        View Selected Work
+        <i className="uil uil-arrow-down button__icon-inline"></i>
+      </a>
+      </div>
     </div>
   );
 };
