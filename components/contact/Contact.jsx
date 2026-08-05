@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get In Touch 📩</h2>
-        <span className="section__subtitle">Ready to get started on your project? <br/> Contact me now let's bring your idea and project to live.</span>
+        <span className="section__subtitle">Have a platform to build, a team to lead, or an architecture to pressure-test? <br/> Tell me what you are working on &mdash; I reply to every message.</span>
 
         <div className="contact__container container grid">
             <div className="contact__content">

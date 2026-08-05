@@ -11,37 +11,45 @@ const Footer = () => {
 
             <ul className="footer__list">
                 <li>
+                    <a href="#projects" className="footer__link">Work</a>
+                </li>
+
+                <li>
+                    <a href="#skills" className="footer__link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#experience" className="footer__link">Experience</a>
+                </li>
+
+                <li>
                     <a href="#about" className="footer__link">About</a>
                 </li>
 
                 <li>
-                    <a href="#portfolio" className="footer__link">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
+                    <a href="#contact" className="footer__link">Contact</a>
                 </li>
             </ul>
 
             <div className="footer__social">
-                <a href="https://www.x.com/muokacharles2/" className="home__social-icon" target="_blank">
+                <a href="https://www.x.com/muokacharles2/" className="home__social-icon" target="_blank" rel="noopener noreferrer">
                     <i className="uil uil-twitter"></i>
                 </a>
 
-                <a href="https://www.youtube.com/charlesmuoka/" className="home__social-icon" target="_blank">
+                <a href="https://www.youtube.com/charlesmuoka/" className="home__social-icon" target="_blank" rel="noopener noreferrer">
                     <i className="uil uil-youtube"></i>
                 </a>
 
-                <a href="https://in.linkedin.com/in/muokacharles" className="home__social-icon" target="_blank">
+                <a href="https://www.linkedin.com/in/muokacharles" className="home__social-icon" target="_blank" rel="noopener noreferrer">
                     <i className="uil uil-linkedin"></i>
                 </a>
 
-                <a href="https://github.com/charlex123" className="home__social-icon" target="_blank">
+                <a href="https://github.com/charlex123" className="home__social-icon" target="_blank" rel="noopener noreferrer">
                     <i className="uil uil-github-alt"></i>
                 </a>
             </div>
 
-            <span className="footer__copy">&#169; Charles Muoka. All rigths reserved</span>
+            <span className="footer__copy">&#169; {new Date().getFullYear()} Charles Muoka. All rights reserved.</span>
         </div>
     </footer>
   )

@@ -65,7 +65,7 @@
 }
 
 .home__img {
-    background: url(../../src/assets/profile-pic.png);
+    background: url(../../src/assets/profile-pic.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -182,10 +182,84 @@
 }
 
 .home__description {
-    max-width: 400px;
-    margin-bottom: var(--mb-3);
+    max-width: 480px;
+    margin-bottom: var(--mb-2);
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.8;
+}
+
+/*=============== CREDIBILITY STRIP ===============*/
+.home__stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    max-width: 480px;
+    margin-bottom: var(--mb-2);
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.home__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.home__stat strong {
+    font-size: 1.35rem;
+    font-weight: var(--font-semi-bold);
+    color: #ff5757;
+    line-height: 1.1;
+}
+
+.home__stat span {
+    font-size: var(--tiny-font-size);
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.35;
+}
+
+/*=============== HERO ACTIONS ===============*/
+.home__cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: var(--mb-3);
+}
+
+.button--ghost {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button--ghost:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ff5757;
+    color: #fff;
+}
+
+.button__icon-inline {
+    margin-left: var(--mb-0-5);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .home__stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home__stat strong {
+        font-size: 1.15rem;
+    }
 }
 
 @keyframes profile__animate {
