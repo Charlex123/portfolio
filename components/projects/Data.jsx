@@ -46,7 +46,7 @@ export const projectsData = [
 		category: 'AI & Agents',
 		access: ACCESS.PROPRIETARY,
 		year: '2026',
-		role: 'Founder & Lead Engineer',
+		role: 'Lead Engineer',
 		metric: '1,589 commits',
 		summary:
 			'A standalone AI learning platform for K-12 schools, independent learners and undergraduate programmes. Built for OpenAI Build Week and submitted to the Devpost OpenAI hackathon as a multilingual AI tutor for Nigerian learners.',

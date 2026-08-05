@@ -107,7 +107,7 @@ const Qualification = () => {
             <motion.div className="qualification__data" variants={dataVariants}>
               <div>
                 <h3 className="qualification__title">Python Everywhere</h3>
-                <span className="qualification__subtitle">By Cousera</span>
+                <span className="qualification__subtitle">By Coursera</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2024
                 </div>
@@ -142,7 +142,7 @@ const Qualification = () => {
                 />
               </div>
               <div>
-                <h3 className="qualification__title"> AWS Certified,  </h3>
+                <h3 className="qualification__title">AWS Certified</h3>
                 <span className="qualification__subtitle">By Coursera</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2024
@@ -163,8 +163,8 @@ const Qualification = () => {
             {/* Education Entry 1 */}
             <motion.div className="qualification__data" variants={dataVariants}>
               <div>
-                <h3 className="qualification__title">Azure Certified </h3>
-                <span className="qualification__subtitle">By Cousera</span>
+                <h3 className="qualification__title">Azure Certified</h3>
+                <span className="qualification__subtitle">By Coursera</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> 2024
                 </div>

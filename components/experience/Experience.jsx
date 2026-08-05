@@ -7,7 +7,7 @@ const EXPERIENCE = [
 	{
 		id: 1,
 		icon: 'uil uil-rocket',
-		role: 'Founder & Principal Engineer',
+		role: 'Principal Engineer',
 		company: 'Zetranet Solutions Ltd',
 		period: '2025 — Present',
 		summary:

@@ -124,7 +124,7 @@ CI/CD & GitHub Actions
 
 ## Experience
 
-**Founder & Principal Engineer** — Zetranet Solutions Ltd · *2025 — Present*
+**Principal Engineer** — Zetranet Solutions Ltd · *2025 — Present*
 Architecture, implementation and delivery of the AI product portfolio across education,
 industrial operations and government: Satryx Forge, MirrorMingo, NEIP, the Nostra Tova agent
 monorepo and the ClawPod GPU inference tier.
